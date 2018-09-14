@@ -1,0 +1,152 @@
+/*-------------GLOBAL--------------*/
+        /*color usage: 
+                    Background: lightgrey = #e8e8e8
+
+                    Primary text:  #FFFFFF // Primary color: #512DA8 // Primary color text: #FFFFFF;
+                    CONTRAST RATIO = 9.16;
+
+                    Accent color: #FFC107 // Accent color text: #000000;
+                    CONTRAST RATIO = 12.88;
+             */
+
+* {
+    background-color: #e8e8e8;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+button, a:link, a:visited {
+    text-transform: uppercase;
+}
+
+/*-------------APP BAR-------------*/
+h1 {
+    background-color: #512DA8;
+    color: #FFFFFF;
+}
+
+h2 {
+    background-color: #FFFFFF;
+}
+
+small {
+    background-color: #512DA8;
+}
+
+/*-------------CHANNELS LIST-------*/
+            
+
+div ul li{
+    background-color:white;
+}
+
+img{
+    background-color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#channel-list li {
+    padding:16px;
+    font-size:16px;
+    height: 48px;
+    box-sizing: border-box;
+}
+
+#channel-list img {
+    vertical-align: middle;
+}
+
+#channel-list li.selectedChannel {
+    color:#512DA8;
+    padding: 16px 16px 16px 12px;
+    border-left-width: 4px;
+    border-left-color:  #512DA8;
+    border-left-style: solid;
+}
+
+#channel-list ul hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+/*-------------TAB BAR-------------*/
+#tab-bar{
+    text-align: center;
+    background-color: white;
+}
+
+#tab-bar button{
+    background-color: white;
+    border-style: none;
+    font-size: 13px;
+    width: 33%;
+    height: 72px;
+    padding: 0px 8px 0px 8pxs;
+}
+
+#tab-bar button.selected {
+    color: #512DA8;
+    border-bottom-width: 4px;
+    border-bottom-color: #512DA8;
+    border-bottom-style: solid;
+}
+
+#tab-bar img{
+    line-break: auto;
+    margin: auto;
+    padding: 0px 0px 4px 0px;
+}
+
+
+
+/*-------------MESSAGES-------------*/
+h3 {
+    font-size: medium;
+   }
+
+
+.message, .own {
+    width: 80%;
+    color: #000000;
+    margin: 8px 0px 8px 2.5%;
+}
+
+.own {
+    margin: 8px 0px 8px 17.5%;
+}
+
+.message p, .own p {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    padding: 16px;
+}
+
+
+.message button, .own button{
+    background-color: #FFC107;
+    color: inherit;
+}
+
+
+.message i, .own i{
+    font-size: larger;
+    font-style: normal;
+}
+
+            /*to address location information a link to the website w3w was made (see Body-->Chat Area-->MetaData). 
+            a:link refers to the look of this link and a:visited to the look after link has been visited;
+            this job without linking an external site could've been done with a SPAN TAG as well*/  
+            /*All links should be primary color. 
+            But the location info in h1 is white. Therefore it's not readable if #000000 is used. 
+            The funktion inherit uses the primary color for text messages, but uses #FFFFFF for the h1 so that it's a link AND still readable.*/
+
+a:link, a:visited { 
+    background-color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
